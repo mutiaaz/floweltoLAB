@@ -15,6 +15,10 @@ class ManagerController extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
+
+    public function __construct() {
+        $this->middleware('auth');
+    }
     //show category di home page
     public function index()
     {

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +22,11 @@ Route::get('/login', function () {
     return view('Login_Flowelto');
 });
 
+
+
 //Home
-Route::get('/userhome', 'UsersController@index');
-Route::get('/managerhome', 'ManagerController@index');
+Route::get('/userhome', 'UsersController@index')->middleware();
+Route::get('/managerhome', 'ManagerController@index')->middleware('id:1');;
 Route::get('/guesthome', 'GuestsController@index');
 
 //Manage & View Flower & Categories
@@ -48,3 +51,7 @@ Route::post('/saveUpdateCategory/{id}','ManagerController@saveUpdateCategory');
 Route::get('/addFlower', function () {
     return view('Manager/AddFlower');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
