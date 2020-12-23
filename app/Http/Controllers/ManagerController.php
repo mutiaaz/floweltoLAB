@@ -64,42 +64,38 @@ class ManagerController extends Controller
     //save update flower
     public function saveUpdateFlower(Request $request,$id)
     {
-        $this->validate($request,[
-            'flower_name'=>'filled|unique:flowers,flower_name|min:5',
-            'flower_price'=>'filled|integer|digits_between:50000,10000000',
-            'flower_desc'=>'filled|min:20',
-            'flower_img'=>'nullable'
+        $validatedData = $request->validate([
+            'flower_name' => ['filled', 'unique:flowers', 'min:5'],
+            'flower_price' => ['filled','integer','gt:50000'],
+            'flower_decs'=>['filled','min:20'],
+            'category_id'=>['filled'],
         ]);
 
-//            $input = $request->all();
-//            $flower = DB::table('flowers')->find($id);
-//            $flower->flower_name = $input['flower_name'];
-//            $flower->flower_price= $input['flower_price'];
-//            $flower->category_id = $input['category_id'];
+            $input = $request->all();
+            $flower = DB::table('flowers')->find($id);
+            $flower->flower_name = $input['flower_name'];
+            $flower->flower_price= $input['flower_price'];
+            $flower->category_id = $input['category_id'];
+            $flower->flower_img = $input['flower_img'];
+
+            $flower->update();
+
 //
-//            $flower->update();
+//
+//        $flower = DB::table('flowers')->where('id',$id);
+//        $flower->update([
+//            'flower_name'=>$request->input('flower_name'),
+//            'flower_price'=>$request->input('flower_price'),
+//            'flower_desc'=>$request->input('flower_desc'),
+//            'category_id'=>$request->input('category_id'),
+//            'flower_img'=>$request->input('flower_img')
+//        ]);
 
-
-
-        $flower = DB::table('flowers')->where('id',$id);
-        $flower->update([
-            'flower_name'=>$request->input('flower_name'),
-            'flower_price'=>$request->input('flower_price'),
-            'flower_desc'=>$request->input('flower_desc'),
-            'category_id'=>$request->input('category_id')
-        ]);
-
-//            if ($request->filled('flower_img'))
-//            {
-//                $flower->update([
-//                    'flower_img'=> bcrypt($request->input('flower_img'))
-//                ]);
-//            }
         return redirect()->back()->with(['success' => 'Flower updated!']);
     }
 
 
-    //update category
+    //update category Page
     public function updateCategory($id)
     {
         $category = collect(DB::select('select * from categories'))->where('id',$id)->first();
@@ -111,34 +107,16 @@ class ManagerController extends Controller
     public function saveUpdateCategory(Request $request,$id)
     {
         $this->validate($request,[
-            'category_name'=>'filled|unique:categories,category_name|min:5',
-            'category_img'=>'nullable'
+            'category_name'=>'filled|unique:categories,category_name|min:5'
         ]);
 
 
         $category = DB::table('categories')->where('id',$id);
-//        $category->update([
-//            'category_name'=>$request->input('category_name')
-//        ]);
+        $category->update([
+            'category_name'=>$request->input('category_name'),
+            'category_img'=>$request->input('category_img')
+        ]);
 
-        if ($request->hasFile('category_img')){
-            $file = $request->file('category_img');
-            $extension = $file->getClientOriginalExtension();
-            $filename = $file->getClientOriginalName();
-            $newFilename = $filename.'.'.$extension;
-            $file->move('assets/',$newFilename);
-            $category->category_img = $newFilename;
-
-            $category->update([
-                'category_name'=>$request->input('category_name'),
-                'category_img'=>$newFilename
-            ]);
-
-        }else{
-            $category->update([
-                'category_name'=>$request->input('category_name')
-            ]);
-        }
         return redirect()->back()->with(['success' => 'Category updated!']);
     }
 

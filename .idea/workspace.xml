@@ -4,20 +4,8 @@
     <list default="true" id="31e93019-acc6-4abd-a83b-f0928fcb25e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ManagerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ManagerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_103355_create_flowers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_103355_create_flowers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Guest/FlowerDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Guest/FlowerDetail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Guest/GuestsVFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Guest/GuestsVFlower.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Manager/AddFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/AddFlower.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Manager/FlowerDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/FlowerDetail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Manager/ManageCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/ManageCategory.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Manager/ManagerHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/ManagerHome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Manager/ManagerVFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/ManagerVFlower.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Manager/UpdateCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/UpdateCategory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_095522_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_095522_create_categories_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Manager/UpdateFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/UpdateFlower.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/User/FlowerDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/FlowerDetail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/User/UsersHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/UsersHome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/User/UsersVFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/UsersVFlower.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +175,7 @@
       <workItem from="1608369101440" duration="5745000" />
       <workItem from="1608426450969" duration="13125000" />
       <workItem from="1608653733199" duration="4197000" />
-      <workItem from="1608690195112" duration="5145000" />
+      <workItem from="1608690195112" duration="7001000" />
     </task>
     <servers />
   </component>

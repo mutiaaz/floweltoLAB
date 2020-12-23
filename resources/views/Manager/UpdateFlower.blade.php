@@ -80,7 +80,7 @@
                 <div class="form-group row">
                     <label for="Category" class="col-sm col-form-label">Category</label>
                     <div class="col-sm" style="width: 500px">
-                        <select class="form-control" id="list_category" name="list_category" style="height: 30px">
+                        <select class="form-control" id="list_category" name="category_d" style="height: 30px">
                             @foreach($categories as $category)
                                 <option value="{{$category->id}}" name="category_id"
                                     {{$category->id == $flower->category_id? 'selected' : ''}}>
@@ -100,7 +100,7 @@
                 <div class="form-group row">
                     <label for="FlowerPrice" class="col-sm col-form-label">Flower Price</label>
                     <div class="col-sm">
-                        <input type="number" class="form-control" min="0" max="1000000" name="flower_price" value="{{$flower->flower_price}}">
+                        <input type="number" class="form-control" min="50000" name="flower_price" value="{{$flower->flower_price}}">
                     </div>
                 </div>
 
