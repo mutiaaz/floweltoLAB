@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <script src="/js/app.js"></script>
 
-    <title>Home</title>
+    <title>Flower Detail</title>
 </head>
 
 <body style="background-color: linen">

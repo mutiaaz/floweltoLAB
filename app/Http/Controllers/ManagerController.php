@@ -7,6 +7,8 @@ use Faker\Provider\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Category;
+use Illuminate\Support\Facades\Validator;
+
 
 class ManagerController extends Controller
 {
@@ -148,14 +150,43 @@ class ManagerController extends Controller
         return view('Manager/FlowerDetail',compact('flower'));
     }
 
+
+    //page add flower
+    public function addFlowerPage()
+    {
+        $categories = Category::all();
+        $flower = Flower::all();
+
+        return view('Manager/addFlower',compact('categories','flower'));
+    }
+
     /**
      * Show the form for creating a new resource.
-     *
+     * @param array $flower
+     * @return \App\Flower
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Validation\ValidationException
      */
-    public function create()
+    public function addFlower(Request $request)
     {
-        //
+
+        $validatedData = $request->validate([
+            'flower_name' => ['filled', 'unique:flowers', 'min:5'],
+            'flower_price' => ['filled','integer','gt:50000'],
+            'flower_decs'=>['filled','min:20'],
+            'category_id'=>['filled'],
+        ]);
+
+        $addFlower = new Flower();
+        $addFlower->flower_name = $request->flower_name;
+        $addFlower->flower_price = $request->flower_price;
+        $addFlower->flower_desc = $request->flower_desc;
+        $addFlower->category_id = $request->category_id;
+        $addFlower->flower_img = $request->flower_img;
+
+        $addFlower->save();
+        return redirect()->back()->with(['success' => 'Flower added!']);
+
     }
 
     /**
@@ -166,11 +197,7 @@ class ManagerController extends Controller
      */
     public function store(Request $request)
     {
-        $flowers = new Flower();
-        $flowers->name = $request->input('flower_name');
-        $flowers->price = $request->input('flower_price');
-        $flowers->name = $request->input('flower_name');
-        $flowers->name = $request->input('flower_name');
+
     }
 
     /**

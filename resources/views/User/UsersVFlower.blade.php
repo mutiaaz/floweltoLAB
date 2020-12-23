@@ -16,7 +16,7 @@
         }
 
     </style>
-    <title>Home</title>
+    <title>Flower List</title>
 </head>
 
 <body style="background-color: linen">
@@ -48,7 +48,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">My Cart</a>
                         <a class="dropdown-item" href="#">Transaction History</a>
-                        <a class="dropdown-item" href="#">Change Password</a>
+                        <a class="dropdown-item" href="{{ route('password.request')}}">Change Password</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();

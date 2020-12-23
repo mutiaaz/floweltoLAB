@@ -16,7 +16,7 @@
         }
 
     </style>
-    <title>Home</title>
+    <title>Flower List</title>
 </head>
 
 <body style="background-color: linen">

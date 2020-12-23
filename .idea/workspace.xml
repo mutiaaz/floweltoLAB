@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31e93019-acc6-4abd-a83b-f0928fcb25e7" name="Default Changelist" comment="" />
+    <list default="true" id="31e93019-acc6-4abd-a83b-f0928fcb25e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ManagerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ManagerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_103355_create_flowers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_103355_create_flowers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Guest/FlowerDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Guest/FlowerDetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Guest/GuestsVFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Guest/GuestsVFlower.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Manager/AddFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/AddFlower.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Manager/FlowerDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/FlowerDetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Manager/ManageCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/ManageCategory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Manager/ManagerHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/ManagerHome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Manager/ManagerVFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/ManagerVFlower.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Manager/UpdateCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/UpdateCategory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Manager/UpdateFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Manager/UpdateFlower.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/User/FlowerDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/FlowerDetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/User/UsersHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/UsersHome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/User/UsersVFlower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/UsersVFlower.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +27,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -164,6 +184,10 @@
       <workItem from="1608205782247" duration="11314000" />
       <workItem from="1608257044559" duration="24543000" />
       <workItem from="1608300387385" duration="2088000" />
+      <workItem from="1608369101440" duration="5745000" />
+      <workItem from="1608426450969" duration="13125000" />
+      <workItem from="1608653733199" duration="4197000" />
+      <workItem from="1608690195112" duration="5145000" />
     </task>
     <servers />
   </component>
@@ -179,17 +203,21 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="35" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1607963596367" />
-    <state x="372" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607963754459">
+    <state x="372" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608690774875">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="372" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607963754459" />
+    <state x="372" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608690774875" />
     <state x="422" y="96" key="FileChooserDialogImpl" timestamp="1608299291180">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="422" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1608299291180" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1608121851985">
+    <state x="460" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608690811155">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1608121851985" />
+    <state x="460" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1608690811155" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1608441843501">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1608441843501" />
   </component>
 </project>

@@ -16,7 +16,7 @@
         }
 
     </style>
-    <title>Home</title>
+    <title>Manage Category</title>
 </head>
 
 <body style="background-color: linen">
@@ -46,9 +46,9 @@
                         {{ Auth::user()->name }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Add Flower</a>
+                        <a class="dropdown-item" href="{{url('/addFlowerPage')}}">Add Flower</a>
                         <a class="dropdown-item" href="{{url('/manageCategories')}}">Manage Category</a>
-                        <a class="dropdown-item" href="#">Change Password</a>
+                        <a class="dropdown-item" href="{{ route('password.request') }}">Change Password</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();

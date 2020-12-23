@@ -48,9 +48,12 @@ Route::post('/saveUpdateFlower/{id}','ManagerController@saveUpdateFlower');
 Route::get('/updateCategory/{id}','ManagerController@updateCategory');
 Route::post('/saveUpdateCategory/{id}','ManagerController@saveUpdateCategory');
 
-Route::get('/addFlower', function () {
-    return view('Manager/AddFlower');
-});
+Route::get('/addFlowerPage','ManagerController@addFlowerPage');
+Route::post('/addFlower','ManagerController@addFlower');
+//Route::get('/addFlowerPage', function () {
+//    return view('Manager/AddFlower');
+//});
+
 
 Auth::routes();
 

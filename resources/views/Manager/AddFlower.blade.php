@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <script src="/js/app.js"></script>
 
-    <title>Home</title>
+    <title>Add Flower</title>
 </head>
 
 <body style="background-color: linen">
@@ -38,9 +38,9 @@
                         {{ Auth::user()->name }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Add Flower</a>
+                        <a class="dropdown-item" href="{{url('/addFlowerPage')}}">Add Flower</a>
                         <a class="dropdown-item" href="{{url('/manageCategories')}}">Manage Category</a>
-                        <a class="dropdown-item" href="#">Change Password</a>
+                        <a class="dropdown-item" href="{{ route('password.request') }}">Change Password</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -64,22 +64,22 @@
         </div>
     </div>
 </nav>
-<div style="margin-top: 50px">
-
+<div  class="container" style="margin-top: 50px">
+    @include('flash-message')
 </div>
 
 <div class="container" style="padding: 20px;background-color: white;display: flex">
+
     <div class="row">
         <div class="col-sm">
-            <form method="post" action="{{url('/addFlower')}}/{{$flower->id}}">
+            <form method="post" action="{{url('/addFlower')}}">
                 {{csrf_field()}}
                 <div class="form-group row">
                     <label for="Category" class="col-sm col-form-label">Category</label>
                     <div class="col-sm" style="width: 500px">
-                        <select class="form-control" id="list_category" name="list_category" style="height: 30px">
+                        <select class="form-control" id="list_category" name="category_id" style="height: 30px">
                                 @foreach($categories as $category)
-                                    <option value="" name="category_id"
-                                        {{$category->id == $flower->category_id? 'selected' : ''}}>
+                                    <option value="{{$category->id}}">
                                         {{$category->category_name}}
                                     </option>
                                 @endforeach
